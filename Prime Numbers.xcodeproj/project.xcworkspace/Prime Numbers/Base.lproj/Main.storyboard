@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prime_Numbers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it Prime Time?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmA-vp-Gr1">
+                                <rect key="frame" x="125" y="145" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-Qb-BJS">
+                                <rect key="frame" x="36" y="277" width="345" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2Z-1S-wHa">
+                                <rect key="frame" x="159" y="288" width="88" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="RSB-lS-NdQ"/>
+                                    <constraint firstAttribute="height" constant="33" id="rAu-oO-Va4"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGG-RU-QLX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aig-81-Sfb">
+                                <rect key="frame" x="109" y="191" width="188" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-optimus-prime-autobot-logo-transformers-decepticon-transformers-symbol-5aaf4179547418.0442973415214350013459.png" translatesAutoresizingMaskIntoConstraints="NO" id="fqZ-Dg-zr3">
+                                <rect key="frame" x="165" y="38" width="77" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="iJh-Jt-ScS"/>
+                                    <constraint firstAttribute="width" constant="77" id="xd8-Jf-L57"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-optimus-prime-megatron-galvatron-transformers-gen-transformers-5abce34c3f6766.6511306015223283962597.png" translatesAutoresizingMaskIntoConstraints="NO" id="q7d-1a-rDQ">
+                                <rect key="frame" x="81" y="337" width="245" height="379"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="Zef-m1-lmK"/>
+                                    <constraint firstAttribute="height" constant="379" id="k17-2D-3Mv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number between 1 and 29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQ5-X8-ebV">
+                                <rect key="frame" x="100" y="229" width="240" height="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LQ5-X8-ebV" firstAttribute="top" secondItem="aig-81-Sfb" secondAttribute="bottom" constant="8" symbolic="YES" id="50t-cP-fpz"/>
+                            <constraint firstItem="fqZ-Dg-zr3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="5Fg-Ui-dDd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m2Z-1S-wHa" secondAttribute="bottom" constant="415" id="5fS-Y0-hkO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m2Z-1S-wHa" secondAttribute="trailing" constant="167" id="Iwd-0q-r2m"/>
+                            <constraint firstItem="aig-81-Sfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="LYD-3E-ryh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fmA-vp-Gr1" secondAttribute="trailing" constant="133" id="MqM-Ho-eNS"/>
+                            <constraint firstItem="aig-81-Sfb" firstAttribute="top" secondItem="fmA-vp-Gr1" secondAttribute="bottom" constant="25" id="QPC-eO-jhB"/>
+                            <constraint firstItem="fmA-vp-Gr1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="QT5-bh-ats"/>
+                            <constraint firstItem="LQ5-X8-ebV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="U5e-HQ-xb1"/>
+                            <constraint firstItem="q7d-1a-rDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="XFl-me-LXb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aig-81-Sfb" secondAttribute="trailing" constant="117" id="cmF-Dg-mFg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q7d-1a-rDQ" secondAttribute="bottom" constant="20" id="dBw-oE-DXQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q7d-1a-rDQ" secondAttribute="trailing" constant="88" id="e2h-wX-GKb"/>
+                            <constraint firstItem="m2Z-1S-wHa" firstAttribute="top" secondItem="Ckz-Qb-BJS" secondAttribute="bottom" constant="11" id="i7v-Er-JCc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ckz-Qb-BJS" secondAttribute="trailing" constant="33" id="lds-3U-kdr"/>
+                            <constraint firstItem="fqZ-Dg-zr3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="nJ1-za-F7G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LQ5-X8-ebV" secondAttribute="trailing" constant="74" id="od9-x9-7Ct"/>
+                            <constraint firstItem="q7d-1a-rDQ" firstAttribute="top" secondItem="m2Z-1S-wHa" secondAttribute="bottom" constant="16" id="tII-XK-oz0"/>
+                            <constraint firstItem="Ckz-Qb-BJS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="u3e-v0-L7w"/>
+                            <constraint firstItem="fmA-vp-Gr1" firstAttribute="top" secondItem="fqZ-Dg-zr3" secondAttribute="bottom" constant="8" id="u7T-gg-Nto"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fqZ-Dg-zr3" secondAttribute="trailing" constant="172" id="u84-YY-lqX"/>
+                            <constraint firstItem="m2Z-1S-wHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="wsT-VX-fwM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="Ckz-Qb-BJS" id="gtl-7C-MVQ"/>
+                        <outlet property="userInput" destination="aig-81-Sfb" id="iEm-jz-bRq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="119.83695652173914"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kisspng-optimus-prime-autobot-logo-transformers-decepticon-transformers-symbol-5aaf4179547418.0442973415214350013459.png" width="450" height="450"/>
+        <image name="kisspng-optimus-prime-megatron-galvatron-transformers-gen-transformers-5abce34c3f6766.6511306015223283962597.png" width="600" height="724"/>
+    </resources>
+</document>
